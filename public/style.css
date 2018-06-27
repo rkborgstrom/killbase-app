@@ -101,6 +101,21 @@ body {
     margin-left: 20%;
 }
 
+/* @media only screen and (max-width: 800px) {
+    .assassin-container {
+        display: flex;
+        justify-content: center;
+    }
+} */
+
+.forms-container {
+    padding-left: 30px;
+}
+
+.forms-container2 {
+padding-left: 30px;
+}
+
 .active-assassins>strong {
     font-size: 25px;
 }
