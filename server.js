@@ -15,9 +15,14 @@ let assassins = require('./routes/assassins');
 app.use(express.static(path.join(__dirname, 'public')));
 app.disable('x-powered-by');
 app.use(morgan('short'));
+// middleware that will intercept requests with a 'Content-Type': 'application/json' header and parse the body
+// from a JSON string into a javascript object.
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
+// middleware that will intercept requests with a POST method AND urlencoded data (ex. localhost:8000/assassins?name=Ryan&age=23)
+app.use(bodyParser.urlencoded({extended: true}));
+
+app.get('/', (req, res, next) => {
     res.sendFile('index.html');
 })
 
