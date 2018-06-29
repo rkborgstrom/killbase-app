@@ -116,6 +116,23 @@ body {
 padding-left: 30px;
 }
 
+.asn1-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.asn1-flex2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
 .active-assassins>strong {
     font-size: 25px;
 }

@@ -3,9 +3,12 @@
 <html>
 
 <head>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Killbase</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    
 </head>
 
 <body>
@@ -30,7 +33,11 @@
     </div>
 
     <section id='background'>
+
         <section class='assassin-container'>
+
+                    
+
             <section class='active-assassins'>
                 <strong>Active Assassins</strong>
                 <br></br>
@@ -41,18 +48,27 @@
                         <strong>Assassin One (Code Name)</strong>
                         <img src="" alt="">
                         <br></br>
-                        <section class='rating'>Rating: 8</section>
-                        <section class='kills'>Kills: 88</section>
-                        <section class='price'>Price: 88</section>
-                        <section class='age'>Age: 88</section>
-                        <section class='weapon'>
+                        <section class='asn1-flex'>
+                            <section id="_rating" class='rating' value="">Rating: 8</section>
+                            <section id="_kills"class='kills' value="">Kills: 88</section>
+                        </section>
+                        <section class='asn1-flex2'>
+                            <section id="_price" class='price' value="">Price: 88</section>
+                            <section id="_age"class='age' value="">Age: 88</section>
+                        </section>
+
+                        <section id="_weapon" class='weapon' value="">
                             <strong>Weapon: </strong>The Weapon </section>
-                        <section class='contact'>
+                        <section id="_contact" class='contact' value="">
                             <strong>Contact: </strong>assassin@gmail.com </section>
-                        <button type="button">Edit</button>
-                        <button type="button">Delete</button>
-                        <a href="add_assassin.html"><button type="button">Add</button></a>
                     </section>
+                    <section id="_addButton" class="addButton">
+                            <button type="button">Edit</button>
+                            <button type="button">Delete</button>
+                            <a href="add_assassin.html">
+                                <button type="button">Add</button>
+                            </a>
+                        </section>
                     <br></br>
 
                     <section class='assassin-two'>
@@ -60,39 +76,30 @@
                         <strong>Assassin Two (Code Name)</strong>
                         <img src="" alt="">
                         <br></br>
-                        <section class='rating'>Rating: 8</section>
-                        <section class='kills'>Kills: 88</section>
-                        <section class='price'>Price: 88</section>
-                        <section class='age'>Age: 88</section>
+                        <section class='asn1-flex'>
+                            <section class='rating'>Rating: 8</section>
+                            <section class='kills'>Kills: 88</section>
+                        </section>
+                        <section class='asn1-flex2'>
+                            <section class='price'>Price: 88</section>
+                            <section class='age'>Age: 88</section>
+                        </section>
                         <section class='weapon'>
                             <strong>Weapon: </strong> The Weapon </section>
                         <section class='contact'>
                             <strong>Contact: </strong> assassin@gmail.com </section>
+                    </section>
+                    <section class="buttons">
                         <button type="button">Edit</button>
                         <button type="button">Delete</button>
                         <button type="button">Add</button>
                     </section>
-            </section>
+
+            
         </section>
     </section>
     </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="./assassinsFetch.js"></script>
 </body>
 
 
