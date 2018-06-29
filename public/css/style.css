@@ -7,7 +7,7 @@ body {
 }
 
 #background {
-    background-image: url('/Users/ryanborgstrom 1/_galvanizeprojects/killbase-app/images/smoke.jpg');
+    background-image: url('../images/smoke.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

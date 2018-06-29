@@ -1,6 +1,6 @@
 (function () {
     console.log('What in the hell?');
-    let link = 'http://localhost:8000/';
+    let link = 'http://localhost:8000/assassins';
     let _rating = document.getElementById('_rating');
     let _kills = document.getElementById('_kills');
     let _price = document.getElementById('_price');
@@ -12,8 +12,11 @@
 
     document.addEventListener('DOMContentLoaded', function (event) {
         console.log('What in the hell part 2');
-        fetch(link, {cors: 'no-cors'})
-            .then(response => response.json())
+        fetch(link)
+            .then(response => {
+                console.log('Reponse', response);
+                return response.json()
+            })
             .then(data => {
                 console.log('Why you no display my:', data);
 
@@ -37,7 +40,6 @@
                 _age.innerHTML = (`Age: ${age}`);
                 _weapon.innerHTML = (`The Weapon: ${weapon}`);
                 _contact.innerHTML = (`Contact: ${contact}`);
-
             })
             .catch(error => console.log(error));
     })
