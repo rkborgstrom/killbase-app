@@ -2,8 +2,6 @@
 
 // let fs = require('fs');
 // let knex = require('../knex');
-
-
 let router = require('express').Router();
 // let port = process.env.PORT || 8000;
 // let bodyParser = require('body-parser');

@@ -1,7 +1,7 @@
 // 'use strict';
 
 // let fs = require('fs');
-// let knex = require('../knex');
+let knex = require('../knex');
 
 
 let router = require('express').Router();
@@ -13,14 +13,13 @@ let router = require('express').Router();
 // router.use(bodyParser.json());
 
 router.get('/assassins', (req, res, next) => {
-
     knex('assassins')
         .orderBy('id')
         .then((assassins) => {
             res.send(assassins);
         })
         .catch((err) => {
-            next(err);
+            res.send(err);
         })
 });
 
