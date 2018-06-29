@@ -2,10 +2,11 @@
   "name": "killbase-app",
   "version": "1.0.0",
   "description": "**Killbase** is a service that allows international assassins and their clients to create, book, and execute contracts. You are building a web app for them. It should allow you to:",
-  "main": "script.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "mocha",
+    "start": "node server.js",
+    "migrate": "knex migrate:rollback && knex migrate:latest && knex seed:run"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "fs": "0.0.1-security",
     "knex": "^0.14.6",
     "materialize-css": "^1.0.0-rc.2",
+    "morgan": "^1.9.0",
     "pg": "^7.4.3"
   },
   "devDependencies": {
