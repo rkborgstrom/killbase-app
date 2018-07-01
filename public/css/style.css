@@ -73,6 +73,65 @@ body {
     padding-left: 90px;
 }
 
+.all-content {
+    margin-left: 8%;
+}
+
+.assassin-one {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 220px;
+    height: 200px;
+    padding-left: 60px;
+}
+
+.addButton {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 70px;
+}
+#add {
+    border: none;
+    padding: .5rem 1rem;
+    background: #0069ed;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+}
+
+#edit {
+    border: none;
+    padding: .5rem 1rem;
+    background: green;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+}
+
+#delete {
+    border: none;
+    padding: .5rem 1rem;
+    background: red;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+}
+
+.flexrow {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 150px;
+}
+
 .assassins-box {
     height: 400px;
     width: 400px;
@@ -90,13 +149,8 @@ body {
 }
 
 .assassin-container {
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
-    padding-left: 60px;
-    padding-top: 30px;
     background-color: antiquewhite;
-    height: 500px;
+    height: 650px;
     width: 60%;
     margin-left: 20%;
 }
@@ -108,29 +162,26 @@ body {
     }
 } */
 
+.image-container {
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    height: 60px;
+    width: 60px;
+}
+
 .forms-container {
     padding-left: 30px;
 }
 
 .forms-container2 {
-padding-left: 30px;
-}
-
-.asn1-flex {
-    display: flex;
-    justify-content: space-between;
-}
-
-.asn1-flex2{
-    display: flex;
-    justify-content: space-between;
+    padding-left: 30px;
 }
 
 .buttons {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-
 }
 
 .active-assassins>strong {

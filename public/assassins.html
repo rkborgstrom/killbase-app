@@ -4,11 +4,16 @@
 
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" /> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Killbase</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    
+
 </head>
 
 <body>
@@ -33,28 +38,22 @@
     </div>
 
     <section id='background'>
-
         <section class='assassin-container'>
-
-                    
-
-            <section class='active-assassins'>
-                <strong>Active Assassins</strong>
+            <section id="assassins-list" class='active-assassins'>
+                <strong id="active-asn">Active Assassins</strong>
                 <br></br>
                 <br></br>
-                <form>
+                <section class="all-content">
                     <section class='assassin-one'>
 
                         <strong>Assassin One (Code Name)</strong>
-                        <img src="" alt="">
-                        <br></br>
-                        <section class='asn1-flex'>
+                        <img class="image-container" src="images/pickle_rick.jpg" alt="">
+
+                        <section class='flexrow'>
                             <section id="_rating" class='rating' value="">Rating: 8</section>
-                            <section id="_kills"class='kills' value="">Kills: 88</section>
-                        </section>
-                        <section class='asn1-flex2'>
+                            <section id="_kills" class='kills' value="">Kills: 88</section>
                             <section id="_price" class='price' value="">Price: 88</section>
-                            <section id="_age"class='age' value="">Age: 88</section>
+                            <section id="_age" class='age' value="">Age: 88</section>
                         </section>
 
                         <section id="_weapon" class='weapon' value="">
@@ -62,44 +61,48 @@
                         <section id="_contact" class='contact' value="">
                             <strong>Contact: </strong>assassin@gmail.com </section>
                     </section>
+
                     <section id="_addButton" class="addButton">
-                            <button type="button">Edit</button>
-                            <button type="button">Delete</button>
+                            <button id="edit" type="button">Edit</button>
+                            <button id="delete" type="button">Delete</button>
                             <a href="add_assassin.html">
-                                <button type="button">Add</button>
+                                <button id="add" type="button">Add</button>
                             </a>
-                        </section>
+                        
+                    </section>
                     <br></br>
 
-                    <section class='assassin-two'>
+                    <section class='assassin-one'>
 
-                        <strong>Assassin Two (Code Name)</strong>
-                        <img src="" alt="">
-                        <br></br>
-                        <section class='asn1-flex'>
-                            <section class='rating'>Rating: 8</section>
-                            <section class='kills'>Kills: 88</section>
-                        </section>
-                        <section class='asn1-flex2'>
-                            <section class='price'>Price: 88</section>
-                            <section class='age'>Age: 88</section>
-                        </section>
-                        <section class='weapon'>
-                            <strong>Weapon: </strong> The Weapon </section>
-                        <section class='contact'>
-                            <strong>Contact: </strong> assassin@gmail.com </section>
-                    </section>
-                    <section class="buttons">
-                        <button type="button">Edit</button>
-                        <button type="button">Delete</button>
-                        <button type="button">Add</button>
-                    </section>
+                        <strong>Assassin One (Code Name)</strong>
+                        <img class="image-container" src="images/pickle_rick.jpg" alt="">
 
-            
+                        <section class='flexrow'>
+                            <section id="_rating" class='rating' value="">Rating: 8</section>
+                            <section id="_kills" class='kills' value="">Kills: 88</section>
+                            <section id="_price" class='price' value="">Price: 88</section>
+                            <section id="_age" class='age' value="">Age: 88</section>
+                        </section>
+
+                        <section id="_weapon" class='weapon' value="">
+                            <strong>Weapon: </strong>The Weapon </section>
+                        <section id="_contact" class='contact' value="">
+                            <strong>Contact: </strong>assassin@gmail.com </section>
+                        </section>
+                        <section id="_addButton" class="addButton">
+                            <button id="edit" type="button">Edit</button>
+                            <button id="delete" type="button">Delete</button>
+                            <a href="add_assassin.html">
+                                <button id="add" type="button">Add</button>
+                            </a>
+                        
+                    </section>
+                </section>
+
+
+            </section>
         </section>
-    </section>
-    </form>
-    <script src="/js/assassinsFetch.js"></script>
+        <script src="/js/assassinsFetch.js"></script>
 </body>
 
 
