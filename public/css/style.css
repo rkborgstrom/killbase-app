@@ -27,12 +27,13 @@ body {
     color: black;
 }
 
-
-
-
 .assassins {
     color: white;
     text-decoration: white;
+}
+
+.all-content-assassins {
+    padding-left: 50px;
 }
 
 .flex-container {
@@ -44,8 +45,6 @@ body {
     justify-content: space-between;
     padding-left: 90px;
 }
-
-
 
 #add {
     border: none;
@@ -77,8 +76,6 @@ body {
     transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
-
-
 .assassins-box {
     height: 400px;
     width: 400px;
@@ -106,14 +103,18 @@ body {
     margin-left: 20%;
 }
 
-/* @media only screen and (max-width: 800px) {
-    .assassin-container {
-        display: flex;
-        justify-content: center;
-    }
-} */
+.assassin-container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 680px;
+    width: 60%;
+    margin-left: 20%;
+}
 
-.image-container {
+
+#image-container {
     display: flex;
     justify-content: flex-start;
     color: black;
@@ -129,8 +130,15 @@ body {
     padding-left: 30px;
 }
 
-
-
 .active-assassins>strong {
     font-size: 25px;
+}
+
+.left-form {
+    width: 250px;
+}
+
+.right-form {
+    width: 250px;
+    padding-bottom: 125px;
 }
