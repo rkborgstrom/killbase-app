@@ -3,18 +3,17 @@
 <html>
 
 <head>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Killbase</title>
-        <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <title>Killbase</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
 </head>
 
 <body>
 
     <div id='nav'>
         <a href="index.html">
-            <img src="/Users/ryanborgstrom 1/_galvanizeprojects/killbase-app/images/killbase_logo.jpg" id="logo" />
+            <img src="images/killbase_logo.jpg" id="logo" />
 
             <nav>
                 <ul class="nav">
@@ -25,84 +24,78 @@
                         <a href="contracts.html">Contracts</a>
                     </li>
 
+
                 </ul>
             </nav>
             <div class="clear"></div>
     </div>
 
-
     <section id='background'>
         <section class='assassin-container'>
-            <form class="forms-container">
-                <label for="name">
-                    <p>Name</p>
-                </label>
-                <input type="text"  name="name" required>
-
-                <label for="codename">
-                    <p>Codenames (comma separated)</p>
-                </label>
-                <input type="codename"  name="codename" required>
-
-                <label for="image">
-                    <p>Profile Image URL</p>
-                </label>
-                <input type="text" name="image">
-
-                <label for="weapon">
-                    <p>Weapon of Choice</p>
-                </label>
-                <input type="weapon" name="weapon">
-
-                <label for="weapon">
-                    <p>Contact Info</p>
-                </label>
-                <input type="weapon" name="weapon">
-
+            <section id="assassins-list" class='active-assassins'>
+                <strong id="active-asn">Active Assassins</strong>
                 <br></br>
-                <button type="submit" class="btn">Add Assassin</button>
-            </form>
-
-            <form class="forms-container2">
-                <label for="age">
-                    <p>Age</p>
-                </label>
-                <input type="text" name="name" required>
-
-                <label for="Price">
-                    <p>Price</p>
-                </label>
-                <input type="codename" name="codename" required>
-
-                <label for="rating">
-                    <p>Rating</p>
-                </label>
-                <input type="text" name="image">
-
-                <label for="kills">
-                    <p>Kills</p>
-                </label>
-                <input type="weapon" name="weapon">
                 <br></br>
+                <section class="all-content">
+                    <section class='assassin-one'>
 
-            </form>
+                        <strong>Assassin One (Code Name)</strong>
+                        <img class="image-container" src="images/pickle_rick.jpg" alt="">
+
+                        <section class='flexrow'>
+                            <section id="_rating" class='rating' value="">Rating: 8</section>
+                            <section id="_kills" class='kills' value="">Kills: 88</section>
+                            <section id="_price" class='price' value="">Price: 88</section>
+                            <section id="_age" class='age' value="">Age: 88</section>
+                        </section>
+
+                        <section id="_weapon" class='weapon' value="">
+                            <strong>Weapon: </strong>The Weapon </section>
+                        <section id="_contact" class='contact' value="">
+                            <strong>Contact: </strong>assassin@gmail.com </section>
+                    </section>
+
+                    <section id="_addButton" class="addButton">
+                            <button id="edit" type="button">Edit</button>
+                            <button id="delete" type="button">Delete</button>
+                            <a href="add_assassin.html">
+                                <button id="add" type="button">Add</button>
+                            </a>
+                        
+                    </section>
+                    <br></br>
+
+                    <section class='assassin-one'>
+
+                        <strong>Assassin One (Code Name)</strong>
+                        <img class="image-container" src="images/pickle_rick.jpg" alt="">
+
+                        <section class='flexrow'>
+                            <section id="_rating" class='rating' value="">Rating: 8</section>
+                            <section id="_kills" class='kills' value="">Kills: 88</section>
+                            <section id="_price" class='price' value="">Price: 88</section>
+                            <section id="_age" class='age' value="">Age: 88</section>
+                        </section>
+
+                        <section id="_weapon" class='weapon' value="">
+                            <strong>Weapon: </strong>The Weapon </section>
+                        <section id="_contact" class='contact' value="">
+                            <strong>Contact: </strong>assassin@gmail.com </section>
+                        </section>
+                        <section id="_addButton" class="addButton">
+                            <button id="edit" type="button">Edit</button>
+                            <button id="delete" type="button">Delete</button>
+                            <a href="add_assassin.html">
+                                <button id="add" type="button">Add</button>
+                            </a>
+                        
+                    </section>
+                </section>
 
 
-
-
-
+            </section>
         </section>
-    </section>
-
-
-    </form>
-
-
-
-
-
-
-
+        <script src="/js/assassinsFetch.js"></script>
 </body>
 
 

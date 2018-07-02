@@ -7,7 +7,7 @@ body {
 }
 
 #background {
-    background-image: url('../images/smoke.jpg');
+    background-image: url('../images/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -18,45 +18,17 @@ body {
     margin-right: auto;
 }
 
-#logo {
-    height: 110px;
-    width: 110px;
-    float: left;
-    display: inline-block;
+#kb {
+    font-size: 60px;
+    padding-right: 30%;
 }
 
-.clear {
-    clear: both;
+.nav-item {
+    color: black;
 }
 
-#nav {
-    background-color: rgb(52, 49, 45);
-    color: white;
-    width: 100%;
-}
 
-.nav {
-    float: right;
-    list-style: none;
-    text-align: left;
-    margin: 0;
-}
 
-.nav>li {
-    display: Inline-block;
-    padding: 45px 40px 10px 9px;
-}
-
-.nav>li a {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    padding: 5px 0px 5px 0px;
-}
-
-.nav>li>a:hover {
-    color: red;
-}
 
 .assassins {
     color: white;
@@ -69,28 +41,12 @@ body {
     flex-wrap: wrap;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-left: 90px;
 }
 
-.all-content {
-    margin-left: 8%;
-}
 
-.assassin-one {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 220px;
-    height: 200px;
-    padding-left: 60px;
-}
 
-.addButton {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 70px;
-}
 #add {
     border: none;
     padding: .5rem 1rem;
@@ -98,8 +54,7 @@ body {
     color: #ffffff;
     font-size: 1rem;
     text-align: center;
-    transition: background 250ms ease-in-out, 
-                transform 150ms ease;
+    transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
 #edit {
@@ -109,8 +64,7 @@ body {
     color: #ffffff;
     font-size: 1rem;
     text-align: center;
-    transition: background 250ms ease-in-out, 
-                transform 150ms ease;
+    transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
 #delete {
@@ -120,23 +74,18 @@ body {
     color: #ffffff;
     font-size: 1rem;
     text-align: center;
-    transition: background 250ms ease-in-out, 
-                transform 150ms ease;
+    transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
-.flexrow {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 150px;
-}
+
 
 .assassins-box {
     height: 400px;
     width: 400px;
     font-size: 30px;
     color: red;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
     background-color: rgb(255, 0, 0);
 }
 
@@ -145,12 +94,14 @@ body {
     width: 400px;
     font-size: 30px;
     color: red;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
     background-color: red;
 }
 
 .assassin-container {
-    background-color: antiquewhite;
-    height: 650px;
+    background-color: whitesmoke;
+    height: 680px;
     width: 60%;
     margin-left: 20%;
 }
@@ -166,8 +117,8 @@ body {
     display: flex;
     justify-content: flex-start;
     color: black;
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
 }
 
 .forms-container {
@@ -178,11 +129,7 @@ body {
     padding-left: 30px;
 }
 
-.buttons {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
+
 
 .active-assassins>strong {
     font-size: 25px;
