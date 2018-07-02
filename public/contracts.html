@@ -13,22 +13,21 @@
 
 <body>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="index.html">
-                  <img src="images/killbase_logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
-                  Killbase
-                </a>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ml-auto">
-                    
-                      <a class="nav-link" href="assassins.html">Assassins</a>
-                    
-                      <li class="nav-item active">
-                      <a class="nav-link" href="contracts.html">Contracts</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/killbase_logo.jpg" width="30" height="30" class="d-inline-block align-top" alt=""> Killbase
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+
+                <a class="nav-link" href="assassins.html">Assassins</a>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="contracts.html">Contracts</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <section id='background'>
         <section class='assassin-container'>
@@ -40,7 +39,7 @@
                     <section class='assassin-one'>
 
                         <strong>Contract One Name</strong>
-                        <img class="image-container" src="images/pickle_rick.jpg" alt="">
+                        <!-- <img class="image-container" src="images/pickle_rick.jpg" alt=""> -->
 
                         <section class='flexrow'>
                             <section class='client'>Client: Client Name</section>
@@ -49,43 +48,43 @@
                                 <section class='security'>Security Level: 8</section>
                             </section>
 
-                            <section id="_addButton" class="addButton">
+                            <div id="buttons" class="buttons">
                                 <button id="edit" type="button">Edit</button>
                                 <button id="delete" type="button">Delete</button>
-                                <a href="add_assassin.html">
+                                <a href="add_contracts.html">
                                     <button id="add" type="button">Add</button>
                                 </a>
+                            </div>
 
-                            </section>
-                            <br></br>
+                        </section>
+                        <br></br>
 
-                            <section class='assassin-one'>
+                        <section class='assassin-one'>
 
-                                <strong>Contract Two Name</strong>
-                                <img class="image-container" src="images/pickle_rick.jpg" alt="">
+                            <strong>Contract Two Name</strong>
+                            <!-- <img class="image-container" src="images/pickle_rick.jpg" alt=""> -->
 
-                                <section class='flexrow'>
-                                    <section class='client'>Client: Client Name</section>
-                                    <section class='target'>Target Location: Location</section>
-                                    <section class='budget'>Budget: 88</se22ction>
-                                        <section class='security'>Security Level: 8</section>
-                                    </section>
-
-
-                                    <section id="_addButton" class="addButton">
-                                        <button id="edit" type="button">Edit</button>
-                                        <button id="delete" type="button">Delete</button>
-                                        <a href="add_assassin.html">
-                                            <button id="add" type="button">Add</button>
-                                        </a>
-
-                                    </section>
+                            <section class='flexrow'>
+                                <section class='client'>Client: Client Name</section>
+                                <section class='target'>Target Location: Location</section>
+                                <section class='budget'>Budget: 88</se22ction>
+                                    <section class='security'>Security Level: 8</section>
                                 </section>
 
 
+                                <div id="buttons" class="buttons">
+                                    <button id="edit" type="button">Edit</button>
+                                    <button id="delete" type="button">Delete</button>
+                                    <a href="add_contracts.html">
+                                        <button id="add" type="button">Add</button>
+                                    </a>
+                                </div>
                             </section>
+
+
                         </section>
-                        <script src="/js/assassinsFetch.js"></script>
+                    </section>
+                    <script src="/js/assassinsFetch.js"></script>
 </body>
 
 

@@ -80,27 +80,28 @@ body {
     height: 400px;
     width: 400px;
     font-size: 30px;
-    color: red;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    background-color: rgb(255, 0, 0);
+    color: black;
 }
 
 .contracts-box {
     height: 400px;
     width: 400px;
     font-size: 30px;
-    color: red;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    background-color: red;
+    color: black;
 }
 
 .assassin-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: whitesmoke;
     height: 680px;
     width: 60%;
     margin-left: 20%;
+}
+
+.buttons{
+    padding-left: 350px;
 }
 
 .assassin-container2 {
@@ -112,6 +113,7 @@ body {
     width: 60%;
     margin-left: 20%;
 }
+
 
 
 #image-container {
@@ -132,6 +134,10 @@ body {
 
 .active-assassins>strong {
     font-size: 25px;
+}
+
+.active-assassins {
+    padding-left: 20px;
 }
 
 .left-form {
