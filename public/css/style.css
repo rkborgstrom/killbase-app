@@ -46,6 +46,10 @@ body {
     padding-left: 90px;
 }
 
+#assassins-list {
+    padding-left: 70px;
+}
+
 #add {
     border: none;
     padding: .5rem 1rem;
@@ -53,7 +57,6 @@ body {
     color: #ffffff;
     font-size: 1rem;
     text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
 #edit {
@@ -63,7 +66,6 @@ body {
     color: #ffffff;
     font-size: 1rem;
     text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
 #delete {
@@ -73,7 +75,6 @@ body {
     color: #ffffff;
     font-size: 1rem;
     text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
 .assassins-box {
@@ -100,8 +101,8 @@ body {
     margin-left: 20%;
 }
 
-.buttons{
-    padding-left: 350px;
+.buttons {
+    float: right;
 }
 
 .assassin-container2 {
@@ -109,19 +110,13 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: whitesmoke;
-    height: 680px;
+    height: 800px;
     width: 60%;
     margin-left: 20%;
 }
 
-
-
-#image-container {
-    display: flex;
-    justify-content: flex-start;
-    color: black;
-    height: 70px;
-    width: 70px;
+#assassin-section {
+    padding-left: 60px;
 }
 
 .forms-container {
@@ -130,14 +125,6 @@ body {
 
 .forms-container2 {
     padding-left: 30px;
-}
-
-.active-assassins>strong {
-    font-size: 25px;
-}
-
-.active-assassins {
-    padding-left: 20px;
 }
 
 .left-form {
