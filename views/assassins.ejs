@@ -32,38 +32,58 @@
     <main id='background'>
         <section class='assassin-container'>
             <section id="assassin-section">
-                    
+                <h1>Active Assassins</h1>
+                <section class="row">
+
+                    <% for (let i = 0; i<data.length; i++) { %>
+
+                        <div class="w-100"></div>
+
+                        <strong><%=data[i].Full_name%></strong>
+                            <%=data[i].code_names%>
+
+                                <div class="w-100"></div>
 
 
-                <% for (let i = 0; i<data.length; i++) { %> 
-                   <p> <%=data[i].Full_name%> </p>
-                   <p> <%=data[i].code_names%> </p>
-                   <p> <%=data[i].rating%> </p>
-                   <p> <%=data[i].kills%> </p>
-                   <p> <%=data[i].price%> </p>
-                   <p> <%=data[i].age%> </p>
-                   <p> <%=data[i].weapon%> </p>
-                        <%}%> 
+                                <section class="col-6 col-sm-3">
+                                    <strong>Rating:</strong>
+                                    <%=data[i].rating%>
+                                </section>
 
-                        <!-- <% for (let i = 0; i<data.length; i++) { %> 
-                                <p> <%=data[i].code_names%> </p>
-                                     <%}%>  -->
-<!-- 
-                                     <% for (let i = 0; i<data.length; i++) { %> 
-                                            <p> <%=data[i].price%> </p>
-                                                 <%}%> 
 
-                                                 <% for (let i = 0; i<data.length; i++) { %> 
-                                                        <p> <%=data[i].age%> </p>
-                                                             <%}%> 
+                                <section class="col-6 col-sm-3">
+                                    <strong>Kills:</strong>
+                                    <%=data[i].kills%>
+                                </section>
 
-                                                             <% for (let i = 0; i<data.length; i++) { %> 
-                                                                    <p> <%=data[i].rating%> </p>
-                                                                         <%}%>  -->
-            
+                                <div class="w-100"></div>
 
-                
+                                <section class="col-6 col-sm-3">
+                                    <strong>Price:</strong>
+                                    <%=data[i].price%>
+                                </section>
+
+
+                                <section class="col-6 col-sm-3">
+                                    <strong>Age:</strong>
+                                    <%=data[i].age%>
+                                </section>
+
+                                <div class="w-100"></div>
+
+
+                                <section class="col-6 col-sm-3">
+                                    <strong>Weapon:</strong>
+                                    <%=data[i].weapon%>
+                                </section>
+
+                                <br></br>
+
+                                <%}%>
+                </section>
+            </section>
         </section>
     </main>
 </body>
+
 </html>
