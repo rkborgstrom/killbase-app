@@ -10,6 +10,8 @@ let port = process.env.PORT || 8000;
 let knex = require('knex')(config);
 let morgan = require('morgan');
 let assassins = require('./routes/assassins');
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 // let contracts = require('./routes/contracts');
 
 app.use(express.static(path.join(__dirname, 'public')));
