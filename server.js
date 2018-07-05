@@ -10,9 +10,9 @@ let port = process.env.PORT || 8000;
 let knex = require('knex')(config);
 let morgan = require('morgan');
 let assassins = require('./routes/assassins');
+let contracts = require('./routes/contracts');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-// let contracts = require('./routes/contracts');
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.disable('x-powered-by');
@@ -29,8 +29,7 @@ app.get('/', (req, res, next) => {
 })
 
 app.use(assassins);
-// app.use(contracts);
-
+app.use(contracts);
 
 app.use((_req, res) => {
     res.sendStatus(404);

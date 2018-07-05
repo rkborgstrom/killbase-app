@@ -1,16 +1,8 @@
 // 'use strict';
 
-// let fs = require('fs');
 let knex = require('../knex');
 
-
 let router = require('express').Router();
-// let port = process.env.PORT || 8000;
-// let bodyParser = require('body-parser');
-
-// router.disable('x-powered-by');
-// router.use(express.static('public'));
-// router.use(bodyParser.json());
 
 router.get('/assassins', (req, res, next) => {
     knex('assassins')
@@ -91,6 +83,5 @@ router.use(function (req, res) {
     console.error('404 status reached.');
     res.sendStatus(404);
 });
-
 
 module.exports = router;

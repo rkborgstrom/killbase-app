@@ -1,24 +1,18 @@
+
 // 'use strict';
 
-// let fs = require('fs');
-// let knex = require('../knex');
-let router = require('express').Router();
-// let port = process.env.PORT || 8000;
-// let bodyParser = require('body-parser');
+let knex = require('../knex');
 
-// router.disable('x-powered-by');
-// router.use(express.static('public'));
-// router.use(bodyParser.json());
+let router = require('express').Router();
 
 router.get('/contracts', (req, res, next) => {
-
     knex('contracts')
         .orderBy('id')
         .then((contracts) => {
-            res.send(contracts);
+            res.render('contracts', {data: contracts});
         })
         .catch((err) => {
-            next(err);
+            res.send(err);
         })
 });
 
@@ -26,11 +20,11 @@ router.get('/contracts/:id', (req, res, next) => {
     knex('contracts')
         .where('id', req.params.id)
         .first()
-        .then((contracts) => {
-            if (!contracts) {
+        .then((contract) => {
+            if (!contract) {
                 return next();
             }
-            res.send(contracts);
+            res.send(contract);
         })
         .catch((err) => {
             next(err);
@@ -39,13 +33,13 @@ router.get('/contracts/:id', (req, res, next) => {
 
 router.post('/contracts', (req, res, next) => {
     knex('contracts')
-        .insert({
-            client_id: req.body.client_id,
-            budget: req.body.budget,
-            target_id: req.body.target_id,
-            completed: req.body.completed,
-            assassins_id: req.body.assassins_id,
-        }, '*')
+    .insert({
+                    client_id: req.body.client_id,
+                    budget: req.body.budget,
+                    target_id: req.body.target_id,
+                    completed: req.body.completed,
+                    assassins_id: req.body.assassins_id,
+                }, '*')
 
         .then((contracts) => {
             res.send(contracts[0]);
@@ -59,8 +53,8 @@ router.patch('/contracts/:id', (req, res, next) => {
     knex('contracts')
         .where('id', req.params.id)
         .first()
-        .then((contracts) => {
-            if (!contracts) {
+        .then((contract) => {
+            if (!contract) {
                 return next();
             }
 
@@ -86,6 +80,5 @@ router.use(function (req, res) {
     console.error('404 status reached.');
     res.sendStatus(404);
 });
-
 
 module.exports = router;

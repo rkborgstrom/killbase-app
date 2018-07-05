@@ -32,7 +32,7 @@
     <main id='background'>
         <section class='assassin-container'>
             <section id="assassin-section">
-                <h1>Active Assassins</h1>
+                <h1>Available Contracts</h1>
                 <section class="row">
 
                     <% for (let i = 0; i<data.length; i++) { %>
@@ -40,8 +40,8 @@
                         <div class="w-100"></div>
                         
                         <strong>
-                            <%=data[i].Full_name%> &nbsp; </strong>
-                        <%=data[i].code_names%>
+                            <%=data[i].client_id%> &nbsp; </strong>
+                        <%=data[i].budget%>
 
                             <div class="w-100"></div>
 
@@ -51,31 +51,23 @@
                             </section>
 
                             <section class="col-6 col-sm-3">
-                                <strong>Kills:</strong>
-                                <%=data[i].kills%>
+                                <strong>Target ID:</strong>
+                                <%=data[i].target_id%>
                             </section>
 
                             <div class="w-100"></div>
 
                             <section class="col-6 col-sm-3">
-                                <strong>Price:</strong>
-                                <%=data[i].price%>
+                                <strong>Completed?</strong>
+                                <%=data[i].completed%>
                             </section>
 
                             <section class="col-6 col-sm-3">
-                                <strong>Age:</strong>
-                                <%=data[i].age%>
+                                <strong>Assassins ID:</strong>
+                                <%=data[i].assassins_id%>
                             </section>
 
-                            <div class="w-100"></div>
-
-                            <section>
-                                <strong>Weapon:</strong>
-                                <%=data[i].weapon%>
-                            </section>
-
-                            <br></br>
-
+    
                             <%}%>
 
 
